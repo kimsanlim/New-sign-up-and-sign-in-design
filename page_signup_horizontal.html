@@ -1,0 +1,175 @@
+<html>
+  <head>
+    <title>Sign up page</title>
+    <link rel="stylesheet" href="login_register.css"/>
+    <link rel="stylesheet" href="mystyle.css"/>
+    <link rel="stylesheet" href="styles-lightgreen.css"/>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+
+    <script type="text/javascript" src="bootstrap/js/jquery-1.11.3.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="register.js"></script>
+  </head>
+  <body>
+    <!-- <div class="row container text-center" style="margin-top:10px; width:100%;">
+      <img src="logo.png" class="img-responsive" style="margin:0 auto"/>
+      <div class="contact-info">
+        <div>
+          <a href="tel:+855235378999" class="contact-link"><i class="fa fa-phone"></i> 24/7 Support 023 537 8999/096 537 8999</a>
+        </div>
+        <div>
+          <a href="mailto:info@bookmebus.com" class="contact-link"><i class="fa fa-envelope"></i> info@bookmebus.com</a>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="row" style="margin-top:15px; padding-left:37px; padding-right:37px; width:100%; margin-bottom:50px">
+      <div class="col-lg-8 col-lg-offset-2 col-md-12 col-xs-12 col-xs-offset-0" id="signUpForm">
+
+        <div class="col-md-6 col-xs-12" id="signUpIntroduction">
+          <div class="row">
+            <b id="signUpIntroductionTitle">Sign up now to get:</b>
+          </div>
+          <div class="row" style="margin-top:15px">
+            <div class="col-xs-2"><i class="fa fa-cart-plus" style="font-size:30px"></i></div>
+            <div class="col-xs-10 signUpAdvantagesText"><span>Get point on every purchase</span></div>
+          </div>
+          <div class="row" style="margin-top:15px">
+            <div class="col-xs-2"><i class="fa fa-money" style="font-size:30px"></i></div>
+            <div class="col-xs-10 signUpAdvantagesText"><span>Get discount</span></div>
+          </div>
+          <div class="row" style="margin-top:15px">
+            <div class="col-xs-2"><i class="fa fa-commenting-o" style="font-size:30px"></i></div>
+            <div class="col-xs-10 signUpAdvantagesText"><span>Rate and comment on bus company</span></div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xs-12" id="signUpFormContainer">
+          <div>
+            <p class="btn btn-block btn-primary" style="height: 50px; padding:10px; margin-right:35px; border-radius:0px; margin-left:5px">
+              <i class="fa fa-facebook" id="facebookIcon"></i>
+              <span class="btn-text" id="facebookText">
+                Register with Facebook
+              </span>
+            </p>
+            <div>
+              <input type="hidden" id='fb_id' >
+              <input type='hidden' name='fb_access_token' id='fb_access_token' />
+              <input type="hidden" id="first_name" name="first_name" >
+              <input type="hidden" id="last_name" name="last_name">
+            </div>
+          </div>
+
+          <div class="or-box text-center">
+            <span class="or">OR</span>
+          </div>
+
+          <div class="form-group" style="margin-left:5px">
+            <input name="email" id="email" size="20" placeholder="Enter your email address" type="text"/>
+            <label id="signUpEmailValidation"></label>
+            <button class="btn btn-success" id="btnSignUpContinue">Continue</button>
+          </div>
+
+          <div class="signUpUserInfo">
+            <div class="form-group">
+              <input name="mobile_phone" id="mobile_phone" size="20" placeholder="Enter your Mobile Phone" type="mumber">
+            </div>
+
+            <div class="form-group" style="display:flex">
+              <input name="password" id="password" type="password" size="20" placeholder="Enter your password" type="password" style="flex:1">
+              <i class="fa fa-eye btn btn-default" id="btnPasswordVisible"></i>
+              <i class="fa fa-eye-slash btn btn-default" id="btnPasswordInvisible"></i>
+            </div>
+
+            <div style="margin-top:10px;">
+              <p style="text-align:center;">
+                By signing up, you agree to our <a href="/terms_of_use" id="link-term-of-use" target="_blank">Terms of Use</a> and <a href="/privacy_policy" id="link-policy" target="_blank">Privacy Policy</a>.
+              </p>
+            </div>
+
+            <a class="btn btn-block btn-lg btn-success" id='register-btn' value="REGISTER" type="button"> REGISTER </a>
+          </div>
+
+          <div style="margin-top:10px;" class="pull-left">
+            <p class="text-center"> Already member? <a id="link-signin" href="page_signin_horizontal.html"> Sign in </a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="col-xs-12" style="margin-top:-32px; padding-bottom:20px">
+      <div class="container">
+        <div style="padding: 30px 50px 5px !important; background-color:aliceblue; border-radius:10px; margin-top: 50px">
+          <div class="row signup-header">
+            <h3 class="text-center" > Register to BookMeBus! </h3>
+          </div>
+          <div class="row" style="margin-top:25px">
+            <div class="col-md-6 social-signup">
+              <label>Login with social accounts</label><br>
+              <p class="btn btn-primary" style="width: 345px; height: 50px; padding: 10px; margin-right:35px;">
+                <i class="fa fa-facebook" style="font-size: 25px; float: left; margin: 0 0 0 10px; border-right: 1px solid
+                white; padding-right: 21px;"></i>
+                <span class="btn-text" style="font-size: 18px; font-weight: bold; margin-top: 10px;">
+                  Login with Facebook
+                </span>
+              </p>
+              <div>
+                <input type="hidden" id='fb_id' >
+                <input type='hidden' name='fb_access_token' id='fb_access_token' />
+                <input type="hidden" id="first_name" name="first_name" >
+                <input type="hidden" id="last_name" name="last_name">
+              </div>
+            </div>
+            <div class="col-md-6 app-register">
+              <label style="margin-bottom:15px">Or provide your information below</label>
+              <div class="form-group reg-username">
+                <div>
+                  <input name="username" id="username" class="form-control input"  size="20" placeholder="Enter Username" type="text">
+                </div>
+              </div>
+              <div class="form-group reg-email">
+                <div>
+                  <input name="email" id="email" class="form-control input"  size="20" placeholder="Enter Email" type="text">
+                </div>
+              </div>
+              <div class="form-group reg-phone">
+                <div>
+                  <input name="mobile_phone" id="mobile_phone"  class="form-control input"  size="20" placeholder="Enter Mobile Phone" type="mumber">
+                </div>
+              </div>
+              <div class="form-group reg-password">
+                <div >
+                  <input name="password" id="password"  class="form-control input"  size="20" placeholder="Enter password" type="password">
+                </div>
+              </div>
+              <div class="form-group reg-password">
+                <div >
+                  <input name="password_confirmation" id="password_confirmation"  class="form-control input"  size="20" placeholder="Retype your password" type="password">
+                </div>
+              </div>
+
+              <a class="btn btn-block btn-lg shadowed-btn btn-success" id='register-btn' value="REGISTER" type="button"> REGISTER </a>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-12">
+                <p class="secondary-text" style="text-align:center">
+                  By signing up, you agree to our <a href="/terms_of_use" id="link-term-of-use" target="_blank">Terms of Use</a> and <a href="/privacy_policy" id="link-policy" target="_blank">Privacy Policy</a>.
+                </p>
+              </div>
+            </div>
+            <div class="signup-footer">
+              <p class="text-center"> Already member? <a data-toggle="modal" id="link-signin" data-dismiss="modal" href="#ModalLogin"> Sign in </a> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <title>Sign in page</title>
+    <link rel="stylesheet" href="login_register.css"/>
+    <link rel="stylesheet" href="mystyle.css"/>
+    <link rel="stylesheet" href="styles-lightgreen.css"/>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+
+    <script type="text/javascript" src="bootstrap/js/jquery-1.11.3.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="register.js"></script>
+  </head>
+  <body>
+
+    <div class="row" style="margin-top:15px; padding-left:37px; padding-right:37px; width:100%; margin-bottom:50px">
+      <div class="col-lg-4 col-lg-offset-4 col-md-12 col-xs-12 col-xs-offset-0" id="signInForm">
+        <div class="text-center" id="signInTitleContainer">
+          <span id="signInTitle">Sign in with</span>
+        </div>
+
+        <div class="col-xs-12" style="margin-top:35px;">
+          <a href="#" class="btn btn-block btn-primary" style="height: 50px; padding:10px; border-radius:0px;">
+            <i class="fa fa-facebook" id="facebookIcon"></i>
+            <span class="btn-text" id="facebookText">
+              Login with Facebook
+            </span>
+          </a>
+        </div>
+
+        <div class="col-xs-12 or-box text-center">
+          <span class="or">OR</span>
+        </div>
+
+        <div class="col-xs-12" id="signInFormContainer">
+          <label style="margin-top:10px;"><i class="fa fa-user"></i> Login with your email, username or mobile</label>
+          <div class="form-group">
+            <div>
+              <input name="login" id="login" size="20" placeholder="Login" type="text">
+            </div>
+          </div>
+
+          <div class="form-group" style="display:flex">
+            <input name="password" id="password" type="password" size="20" placeholder="Enter your password" type="password" style="flex:1">
+            <i class="fa fa-eye btn btn-default" id="btnPasswordVisible"></i>
+            <i class="fa fa-eye-slash btn btn-default" id="btnPasswordInvisible"></i>
+          </div>
+
+          <div class="form-group">
+            <label>
+              <input id="remember_me" class="pull-left" value="forever" checked="checked" type="checkbox" style="width:30px; height:20px; margin-top:0px"/>
+              <b>Remember Me</b>
+            </label>
+          </div>
+
+          <div>
+            <input class="btn btn-block btn-lg shadowed-btn btn-success" value="LOGIN" type="button" id='login-btn' style="border-radius:0px">
+          </div>
+
+          <div class="text-center" style="margin-top:5px">
+            <span>Not here before? </span><a href="page_signup_horizontal.html" id="linkSignUp">Sign Up.</a>
+          </div>
+
+          <div class="text-center" style="margin-top:10px">
+            <a href="#" id="linkLostPassword"> Lost your password?</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
